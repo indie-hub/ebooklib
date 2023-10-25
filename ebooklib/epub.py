@@ -352,9 +352,9 @@ class EpubHtml(EpubItem):
             html_tree = parse_html_string(self.content)
         except:
             return ''
-
+        
         html_root = html_tree.getroottree()
-
+        
         if len(html_root.find('body')) != 0:
             body = html_tree.find('body')
 

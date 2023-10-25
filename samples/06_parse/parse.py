@@ -14,4 +14,4 @@ for x in  book.get_items_of_type(ebooklib.ITEM_IMAGE):
     debug(x)
 
 for x in  book.get_items_of_type(ebooklib.ITEM_DOCUMENT):
-    debug(x)
+    debug(epub.EpubHtml(x))
